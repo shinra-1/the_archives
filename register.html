@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Archives</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/loginform.css">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+      <box-icon name='menu' class="bx bx-menu menuu"><img src="theme/bx-menu.png" alt=""></box-icon>
+      <div class="logo"><a href="index.html">The Archives</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">The Archives</span>
+          <i class='bx bx-x'><img src="theme/bx-x.png" alt=""></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">Category</a>
+            <i class='bx bxs-chevron-down cate-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
+            <ul class="cate-sub-menu sub-menu">
+              <li><a href="#">All Items</a></li>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Formal</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'><img src="theme/bx-chevron-right.png" alt=""></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">For Men</a></li>
+                  <li><a href="#">For Women</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Account</a>
+            <i class='bx bxs-chevron-down acc-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
+            <ul class="acc-sub-menu sub-menu">
+              <li><a href="#" onclick="openForm()">Log in</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="search-box">
+            <i class='bx bx-search'><img src="theme/bx-search.png" alt=""></i>
+        <div class="input-box">
+          <input type="text" placeholder="What's your style?">
+        </div>
+      </div>
+    </div>
+</nav>
+<script src="script.js"></script>
+
+<div class="center" id="oppen">
+    <h1>Login</h1>
+    <form method="post" action="">
+        <div class="txt_field">
+            <input type="text" id="usn" required>
+            <span></span>
+            <label for="usn">Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="pwd" required>
+            <span></span>
+            <label for="pwd">Password</label>
+        </div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+            Not a member? <a href="#">Signup</a>
+        </div>
+        <input type="button"value="Close"onclick="closeForm()">
+    </form>
+</div>
+<script>
+    function openForm(){
+        document.getElementById("oppen").style.display = "block";
+    }
+    function closeForm(){
+        document.getElementById("oppen").style.display = "none";
+    }
+</script>
+
+<div class="container">
+  <div class="lalagyanan">
+    <h1>Login</h1>
+    <form method="post" action="">
+      <div class="txt_field">
+        <input type="text" id="usn" required>
+        <span></span>
+        <label for="usn">Username</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" id="pwd" required>
+        <span></span>
+        <label for="pwd">Password</label>
+      </div>
+      <input type="submit" value="Login">
+      <div class="signup_link">
+        Not a member? <a href="register.html">Signup</a>
+      </div>
+      <input type="button"value="Close"onclick="closeForm()">
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
