@@ -197,8 +197,7 @@ nav .navbar .links li:hover .acc-sub-menu{
   height: 80px;
   display: flex;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  margin: 100px 0px 0px 0px;
   bottom: 0px;
   background-color: #9A7B4F;
   justify-content: space-between;
