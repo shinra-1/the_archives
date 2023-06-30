@@ -209,7 +209,7 @@ nav .navbar .links li:hover .acc-sub-menu{
   justify-content: space-between;
   margin-top: 10px;
 }
-.foot-logo-1, .foot-logo-2, .foot-logo-3{
+.foot-logo{
   width: 40px;
   height: 40px;
   margin: 0 10px;
@@ -352,7 +352,7 @@ nav .navbar .links li .sub-menu li{
   .foot-right{
     display: none;
   }
-  .foot-logo-1, .foot-logo-2, .foot-logo-3{
+  .foot-logo{
     width: 40px;
     height: 40px;
     margin: 0px 40px;
@@ -360,15 +360,13 @@ nav .navbar .links li .sub-menu li{
  
 }
 @media (max-width:375px){
-.foot-logo-1, .foot-logo-2{
+.foot-logo{
   width: 40px;
   height: 40px;
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
-.foot-logo-3{
-  width: 40px;
-  height: 40px;
-  margin: 0px 10px;
+.flogo{
+  margin: 0px 0px 0px 20px;
 }
 
 }
