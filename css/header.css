@@ -339,7 +339,7 @@ nav .navbar .links li .sub-menu li{
   .footer{
     width: 103%;
     height: 75px;
-    margin-top: 300px;
+    margin: 300px 0px 0px 0px;
     padding: 15px 0px;
   }
   .foot-left{
