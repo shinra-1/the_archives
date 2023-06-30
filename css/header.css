@@ -345,17 +345,15 @@ nav .navbar .links li .sub-menu li{
   }
   .foot-left{
     display: flex;
-    justify-content: space-between;
     position: relative;
     justify-content: center;
     margin-top: 5px;
-    left: 0px;
+    left: 50px;
   }
   .foot-right{
     display: none;
   }
   .foot-logo{
-    left: 40px;
     width: 40px;
     height: 40px;
     margin: 0px 20px;
