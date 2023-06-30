@@ -343,10 +343,10 @@ nav .navbar .links li .sub-menu li{
     padding: 15px 0px;
   }
   .foot-left{
+    display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 5px;
-    margin-left: 20px;
   }
   .foot-right{
     display: none;
