@@ -6,6 +6,7 @@
   <title>The Archives</title>
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/loginform.css">
+  <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
 <nav>
@@ -74,7 +75,7 @@
         </div>
         <input type="submit" value="Login">
         <div class="signup_link">
-            Not a member? <a href="#">Signup</a>
+            Not a member? <a href="register.html">Signup</a>
         </div>
         <input type="button"value="Close"onclick="closeForm()">
     </form>
@@ -88,29 +89,81 @@
     }
 </script>
 
-<div class="container">
-  <div class="lalagyanan">
-    <h1>Login</h1>
-    <form method="post" action="">
-      <div class="txt_field">
-        <input type="text" id="usn" required>
-        <span></span>
-        <label for="usn">Username</label>
+<section class="container">
+  <h2>Registration Form</h2>
+  <form action="#" class="form">
+    <div class="input-kahon">
+      <label >First Name:</label>
+      <input type="text" placeholder="Enter first name" required>
+    </div>
+    <div class="input-kahon">
+      <label >Middle Name:</label>
+      <input type="text" placeholder="Enter middle name" required/> 
+    </div>
+    <div class="input-kahon">
+      <label >Last Name:</label>
+      <input type="text" placeholder="Enter last name" required/> 
+    </div>
+    <div class="input-kahon">
+      <label >Email:</label>
+      <input type="text" placeholder="Enter email name" required/> 
+    </div>
+    <div class="kolum">
+      <div class="input-kahon">
+        <label >Phone Number:</label>
+        <input type="text" placeholder="Enter phone number" required/>
       </div>
-      <div class="txt_field">
-        <input type="password" id="pwd" required>
-        <span></span>
-        <label for="pwd">Password</label>
+      <div class="input-kahon">
+        <label >Birth Date:</label>
+        <input type="date" placeholder="Enter birth date" required/> 
       </div>
-      <input type="submit" value="Login">
-      <div class="signup_link">
-        Not a member? <a href="register.html">Signup</a>
-      </div>
-      <input type="button"value="Close"onclick="closeForm()">
-    </form>
+    </div>
+    <div class="gender-box">
+      <h3>Gender</h3>
+      <div class="gender-option">
+        <div class="gender">
+          <input type="radio" id="check-male" name="gender" checked />
+          <label for="check-male">Male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" id="check-female" name="gender" />
+          <label for="check-female">Female</label>
+        </div>
+        <div class="gender">
+          <input type="radio" id="check-other" name="gender" />
+          <label for="check-other">Prefer not to say</label>
+        </div>
+      </div> 
+    </div>
+    <div class="input-kahon addres">
+      <label >Address</label>
+      <input type="text" placeholder="Enter street address" required/>
+      <input type="text" placeholder="Enter street address line 2" required/>
+      <input type="text" placeholder="Enter your barangay" required/>
+      <input type="text" placeholder="Enter your city" required/>
+      <input type="text" placeholder="Enter your province" required/>
+      <input type="text" placeholder="Enter postal code" required/>
+    </div>
+
+    <input type="submit" value="Register">
+  </form>
+</section>
+
+
+
+
+
+
+<div class="footer">
+  <div class="foot-left">
+    <a href="#"><img src="theme/fb.png" alt="fb" class="foot-logo"></a>
+    <a href="#"><img src="theme/ig.png" alt="fb" class="foot-logo"></a>
+    <a href="#"><img src="theme/twit.png" alt="fb" class="foot-logo flogo"></a>
+  </div>
+  <div class="foot-right">
+    <p>Contact Number: 09665672152 </p>
+    <p>Email: thearchives0623@gmail.com</p>
   </div>
 </div>
-
-
 </body>
 </html>
