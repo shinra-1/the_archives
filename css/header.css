@@ -338,7 +338,7 @@ nav .navbar .links li .sub-menu li{
     max-width: 100%;
   }
   .footer{
-    width: 100%;
+    width: 97%;
     height: 75px;
     margin-top: 300px;
     padding: 15px 0px;
@@ -356,7 +356,7 @@ nav .navbar .links li .sub-menu li{
   .foot-logo{
     width: 40px;
     height: 40px;
-    margin: 0px 30px;
+    margin: 0px 50px;
   }
  
 }
