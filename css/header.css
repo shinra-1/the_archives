@@ -346,6 +346,7 @@ nav .navbar .links li .sub-menu li{
     position: relative;
     justify-content: center;
     margin-top: 5px;
+    margin-left: 20px;
   }
   .foot-right{
     display: none;
