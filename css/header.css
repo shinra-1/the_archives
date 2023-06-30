@@ -347,6 +347,7 @@ nav .navbar .links li .sub-menu li{
     position: relative;
     justify-content: space-between;
     margin-top: 5px;
+    left: 20px;
   }
   .foot-right{
     display: none;
@@ -355,7 +356,6 @@ nav .navbar .links li .sub-menu li{
     width: 40px;
     height: 40px;
     margin: 0px 50px;
-    margin-left: 40px;
   }
  
 }
