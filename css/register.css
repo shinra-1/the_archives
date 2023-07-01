@@ -116,6 +116,7 @@ body{
 @media (max-width:390px){
     .container{
         max-width: 300px;
+        margin: 100px 25px 25px 25px;
     }
 }
 
