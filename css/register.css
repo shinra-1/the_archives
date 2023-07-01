@@ -68,6 +68,7 @@ body{
 }
 .form .gender{
     column-gap: 5px;
+    color: white;
 }
 .form :where(.gender input, .gender label){
     cursor: pointer;
@@ -92,6 +93,35 @@ body{
     color: #9A7B4F;
 }
 
+@media screen and (max-width:920px){
+    .container{
+        left: 35px;
+    }
+}
+@media (max-width:800px){
+    .container{
+        left: 25px;
+        max-width: 700px;
+    }
+}
+@media (max-width:450px){
+    .container{
+        left: 0px;
+        max-width: 400px;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
+@media (max-width:390px){
+    .container{
+        left: 0px;
+        max-width: 340px;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
 
 @media screen and (max-width:500px){
     .form .kolum{
