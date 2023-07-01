@@ -115,11 +115,7 @@ body{
 }
 @media (max-width:390px){
     .container{
-        left: 0px;
-        max-width: 320px;
-    }
-    body{
-        min-height: 100vh;
+        max-width: 300px;
     }
 }
 
