@@ -100,7 +100,7 @@ body{
 }
 @media (max-width:800px){
     .container{
-        left: 15px;
+        left: 0%;
         max-width: 700px;
     }
 }
