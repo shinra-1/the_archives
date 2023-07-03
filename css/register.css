@@ -108,7 +108,7 @@ body{
     .container{
         left: 0px;
         max-width: 400px;
-        margin: 100px 15px 25px 25px;
+        margin: 100px 0px 25px 25px;
     }
 }
 @media (max-width:390px){
