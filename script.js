@@ -39,9 +39,7 @@ jsArrow.onclick = function() {
 // login form
 function openForm(){
   document.getElementById("oppen").style.display = "block";
-  menuCloseBtn.onclick = function() {
-    navLinks.style.left = "-100%";
-    }
+  document.navLinks.style.left = "-100%";
 }
 function closeForm(){
   document.getElementById("oppen").style.display = "none";
