@@ -10,7 +10,7 @@
    </head>
 <body>
   <nav>
-    <div class="navbar">
+    <div class="navbar" id="navbarr">
       <box-icon name='menu' class="bx bx-menu menuu"><img src="theme/bx-menu.png" alt=""></box-icon>
       <div class="logo"><a href="index.html">The Archives</a></div>
       <div class="nav-links">
@@ -83,7 +83,7 @@
 <script>
     function openForm(){
         document.getElementById("oppen").style.display = "block";
-        document.navLinks.style.left = "-100%";
+        document.getElementById("navbarr").style.left = "-100%";
     }
     function closeForm(){
         document.getElementById("oppen").style.display = "none";
