@@ -36,3 +36,15 @@ let jsArrow = document.querySelector(".acc-arrow");
 jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
+
+// login popup open close
+
+function openForm(){
+  document.getElementById("oppen").style.display = "block";
+  menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+  }
+}
+function closeForm(){
+  document.getElementById("oppen").style.display = "none";
+}
