@@ -65,8 +65,9 @@ nav .navbar .links li a{
   margin-top: 10px;
 }
 .more-arrow{
+  position: absolute;
+  top: 6px;
   margin:0;
-  
 }
 .links li:hover .cate-arrow,
 .links li:hover .acc-arrow{
@@ -190,6 +191,7 @@ nav .navbar .links li:hover .acc-sub-menu{
   display: none;
 }
 
+
 /*FOOTER*/
 
 .footer{
@@ -234,6 +236,7 @@ nav .navbar .links li:hover .acc-sub-menu{
   .foot-left{
     margin-top: 5px;
   }
+  
 }
 @media (max-width:800px){
 
@@ -330,7 +333,13 @@ nav .navbar .links li .sub-menu li{
 }
     .navbar .nav-links.show2 .links .more-arrow{
       transform: rotate(90deg);
+      top: -40px;
+      left: 20px;
     }
+    .more-arrow{
+      left: 60px;
+    }
+    
 }
 @media (max-width:450px){
     nav .navbar .nav-links{
