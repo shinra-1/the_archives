@@ -1,106 +1,86 @@
 .container{
     display: flex;
     position: relative;
+    max-width: 1300px;
     width: 100%;
     height: 100%;
     margin-top: 70px;
-    justify-content: space-between;
-    padding: 10px 10px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .headlinee{
     position: absolute;
     margin-top: 20px;
-    left: 40%;
+    left: 50%;
     font-family: 'Poppins',sans-serif;
     color: #9A7B4F;
     font-size: 50px;
     z-index: 50;
 }
 .content {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
   }
-.product-1, .product-2, .product-3{
+.product{
     display: flex;
     position: relative;
     width: 100%;
     height: 450px;
     top: 100px;
     left: 0px;
-    padding: 10px 40px;
+    padding: 0px 40px;
     text-align: center;
     font-size: larger;
     flex-direction: column;
 }
-.product-1 img, .product-2 img, .product-3 img{
+.product img{
     width: 300px;
     height: 300px;
 }
 @media (max-width:920px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .headlinee{
-        left: 36%;
+        left: 40%;
     }
-    .pad{
-        left: 33%;
-        margin-top: 10px;
-    }
-    .product-1, .product-2, .product-3{
+    .product {
         left: 0px;
-        padding: 30px 40px;
-        height: 370px;
+        padding: 20px 40px;
+        height: 350px;
+        margin-bottom: 20px;
     }
-    .product-1 img, .product-2 img,  .product-3 img{
+    .product img{
         width: 200px;
         height: 200px;
     }
 }
 @media (max-width:800px) {
     .headlinee{
-        left: 34%;
+        left: 36%;
     }
-    .pad{
-        left: 30%;
-        margin-top: 10px;
-    }
-
-    .product-1, .product-2, .product-3{
+    .product{
         left: 0px;
-        padding: 20px 20px;
+        padding: 20px 0px;
     }
 }
-@media (max-width:425px) {
+@media (max-width:450px) {
     .content {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
-
     .headlinee{
-        left: 23%;
-        font-size: 38px;
+        left: 20%;
+        font-size: 55px;
     }
-    .pad{
-        left: 13%;
-        margin-top: 125px;
-    }
-
-    .product-1{
+    .product{
+        margin-top: 20px;
         padding: 0px 40px;
         text-align: center;
         font-size: larger;
     }
-    .product-2{
-        padding: 50px 40px;
-        text-align: center;
-        font-size: larger;
-    }
-    .product-3{
-        padding: 100px 40px;
-        text-align: center;
-        font-size: larger;
-    }  
-    .product-1 img, .product-2 img, .product-3 img{
+    .product img{
         width: 250px;
         height: 250px;
     }
