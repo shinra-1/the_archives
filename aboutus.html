@@ -1,145 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Archives</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/loginform.css">
-    <link rel="stylesheet" href="css/frontpage.css">
-   </head>
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+
 <body>
-  <!-- header -->
-  <nav>
-    <div class="navbar">
-      <box-icon name='menu' class="bx bx-menu menuu"><img src="theme/bx-menu.png" alt=""></box-icon>
-      <div class="logo"><a href="index.html">The Archives</a></div>
-      <div class="nav-links" id="navlinks">
-        <div class="sidebar-logo">
-          <span class="logo-name">The Archives</span>
-          <i class='bx bx-x'><img src="theme/bx-x.png" alt=""></i>
-        </div>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="#">Category</a>
-            <i class='bx bxs-chevron-down cate-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
-            <ul class="cate-sub-menu sub-menu">
-              <li><a href="allitems.html">All Items</a></li>
-              <li><a href="casual.html">Casual</a></li>
-              <li><a href="formal.html">Formal</a></li>
-              <li class="more">
-                <span><a href="#">More</a>
-                <i class='bx bxs-chevron-right arrow more-arrow'><img src="theme/bx-chevron-right.png" alt=""></i>
-              </span>
-                <ul class="more-sub-menu sub-menu">
-                  <li><a href="formen.html">For Men</a></li>
-                  <li><a href="forwomen.html">For Women</a></li>
+    <!-- header -->
+    <nav>
+        <div class="navbar">
+            <box-icon name='menu' class="bx bx-menu menuu"><img src="theme/bx-menu.png" alt=""></box-icon>
+            <div class="logo"><a href="index.html">The Archives</a></div>
+            <div class="nav-links" id="navlinks">
+                <div class="sidebar-logo">
+                    <span class="logo-name">The Archives</span>
+                    <i class='bx bx-x'><img src="theme/bx-x.png" alt=""></i>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Category</a>
+                        <i class='bx bxs-chevron-down cate-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
+                        <ul class="cate-sub-menu sub-menu">
+                            <li><a href="allitems.html">All Items</a></li>
+                            <li><a href="casual.html">Casual</a></li>
+                            <li><a href="formal.html">Formal</a></li>
+                            <li class="more">
+                                <span><a href="#">More</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'><img
+                                            src="theme/bx-chevron-right.png" alt=""></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="formen.html">For Men</a></li>
+                                    <li><a href="forwomen.html">For Women</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Account</a>
+                        <i class='bx bxs-chevron-down acc-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
+                        <ul class="acc-sub-menu sub-menu">
+                            <li><a href="#" onclick="openForm()">Log in</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Account</a>
-            <i class='bx bxs-chevron-down acc-arrow arrow'><img src="theme/bx-chevron-down.png" alt=""></i>
-            <ul class="acc-sub-menu sub-menu">
-              <li><a href="#" onclick="openForm()">Log in</a></li>
-              <li><a href="#">Cart</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="search-box">
-        <i class='bx bx-search'><img src="theme/bx-search.png" alt=""></i>
-        <div class="input-box">
-          <input type="text" placeholder="What's your style?">
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'><img src="theme/bx-search.png" alt=""></i>
+                <div class="input-box">
+                    <input type="text" placeholder="What's your style?">
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- login form popup -->
+    <div class="center" id="oppen">
+        <h1>Login</h1>
+        <form method="post" action="">
+            <div class="txt_field">
+                <input type="text" id="usn" required>
+                <span></span>
+                <label for="usn">Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pwd" required>
+                <span></span>
+                <label for="pwd">Password</label>
+            </div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="register.html">Signup</a>
+            </div>
+            <input type="button" value="Close" onclick="closeForm()">
+        </form>
     </div>
-  </nav>
-<!-- login form popup -->
-  <div class="center" id="oppen">
-    <h1>Login</h1>
-    <form method="post" action="">
-      <div class="txt_field">
-        <input type="text" id="usn" required>
-        <span></span>
-        <label for="usn">Username</label>
-      </div>
-      <div class="txt_field">
-        <input type="password" id="pwd" required>
-        <span></span>
-        <label for="pwd">Password</label>
-      </div>
-      <input type="submit" value="Login">
-      <div class="signup_link">
-        Not a member? <a href="register.html">Signup</a>
-      </div>
-      <input type="button"value="Close"onclick="closeForm()">
-    </form>
-  </div>
-  <script src="script.js"></script>
-<!-- top sellers -->
-<div class="container">
-  <h1 class="headlinee">TOP SELLERS</h1>
-  <div class="content">
-    <div class="product">
-      <div><img src="products/POLYESTER RUSTY ORANGE POLO.png" alt=""></div>
-      <div><h5>POLYESTER RUSTY ORANGE POLO</h5></div> 
-      <div><p>P349</p></div>
-      <div><input type="button" value="Buy"></div>
+    <script src="script.js"></script>
+    <!-- contact -->
+    <section class="contact">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>It is an online apparel shop whereas you can browse our very own design in shirts, dresses, and even
+                shorts. Shoppers can add to cart their admired things. Browse through our extensive collection of trendy
+                clothing for men, women, and kids at unbeatable prices. Find the perfect outfit for any occassion with
+                out diverse range of apparel options, from casual wear to formal attire.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="theme/location.png" alt="address"></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Blk 1, Lot 10, Cristina Village, Sipat, Plaridel, Bulacan</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="theme/email.png" alt="email"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>thearchives0623@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="theme/phone.png" alt="phone"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+639158658162</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Feedback</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="foot-left">
+            <a href="#"><img src="theme/fb.png" alt="fb" class="foot-logo"></a>
+            <a href="#"><img src="theme/ig.png" alt="fb" class="foot-logo"></a>
+            <a href="#"><img src="theme/twit.png" alt="fb" class="foot-logo"></a>
+        </div>
+        <div class="foot-right">
+            <p>Contact Number: 09665672152 </p>
+            <p>Email: thearchives0623@gmail.com</p>
+        </div>
     </div>
-    <div class="product">
-      <div><img src="products/COTTON CHECKERED CAMI DRESS.jpeg" alt=""></div>
-      <div><h5>COTTON CHECKERED CAMI DRESS</h5></div>
-      <div><p>P299</p></div>
-      <div><input type="button" value="Buy"></div>
-    </div>
-    <div class="product">
-      <div><img src="products/POLLY COTTON  TIMID WHITE POLO.jpeg" alt=""></div>
-      <div><h5>POLLY COTTON  TIMID WHITE POLO</h5></div>
-      <div><p>P399</p></div>
-      <div><input type="button" value="Buy"></div>
-    </div>
-  </div>
-</div>
-<!-- new arrivals -->
-<div class="container">
-  <h1 class="headlinee pad">NEW ARRIVALS</h1>
-  <div class="content">
-    <div class="product">
-      <div><img src="products/MESH BABY PINK STRAWBERRY PUFF SLEVE DRESS.png" alt=""></div>
-      <div><h5>MESH BABY PINK STRAWBERRY PUFF SLEEVE DRESS</h5></div>
-      <div><p>P499</p></div>
-      <div><input type="button" value="Buy"></div>
-    </div>
-    <div class="product">
-      <div><img src="products/NYLON WHITE PRINTED SHORT.png" alt=""></div>
-      <div><h5>NYLON WHITE PRINTED SHORT</h5></div>
-      <div><p>P249</p></div>
-      <div><input type="button" value="Buy"></div>
-    </div>
-    <div class="product">
-      <div><img src="products/COTTON WHITE LETTUCE CROPTOP.jpeg" alt=""></div>
-      <div><h5>COTTON WHITE LETTUCE CROPTOP</h5></div>
-      <div><p>P299</p></div>
-      <div><input type="button" value="Buy"></div>
-    </div>
-  </div>
-</div>
-<!-- footer -->
-<div class="footer">
-    <div class="foot-left">
-      <a href="#"><img src="theme/fb.png" alt="fb" class="foot-logo"></a>
-      <a href="#"><img src="theme/ig.png" alt="fb" class="foot-logo"></a>
-      <a href="#"><img src="theme/twit.png" alt="fb" class="foot-logo"></a>
-    </div>
-    <div class="foot-right">
-      <p>Contact Number: 09665672152 </p>
-      <p>Email: thearchives0623@gmail.com</p>
-    </div>
-</div>
 </body>
+
 </html>
