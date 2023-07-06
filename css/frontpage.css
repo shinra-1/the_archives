@@ -1,84 +1,65 @@
 .container{
     display: flex;
     position: relative;
+    max-width: 1300px;
     width: 100%;
     height: 100%;
     margin-top: 70px;
-    justify-content: center;
-    padding: 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .headlinee{
     position: absolute;
     margin-top: 20px;
-    left: 40%;
+    left: 50%;
     font-family: 'Poppins',sans-serif;
     color: #9A7B4F;
     font-size: 50px;
     z-index: 50;
 }
 .content {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 180px;
   }
-.topseller-1, .topseller-2, .topseller-3{
+.product{
     display: flex;
     position: relative;
     width: 100%;
     height: 450px;
     top: 100px;
     left: 0px;
-    padding: 10px 50px;
+    margin: 0px 40px;
     text-align: center;
     font-size: larger;
     flex-direction: column;
 }
-.newarrival-1, .newarrival-2, .newarrival-3{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 450px;
-    top: 100px;
-    left: 0px;
-    padding: 10px 50px;
-    text-align: center;
-    font-size: larger;
-    flex-direction: column;
-}
-.topseller-1 img, .topseller-2 img, .topseller-3 img, .newarrival-1 img, .newarrival-2 img, .newarrival-3 img{
+.product img{
     width: 300px;
     height: 300px;
 }
 @media (max-width:920px) {
+    .content {
+        grid-gap: 1rem;
+    }
     .headlinee{
-        left: 36%;
+        left: 37%;
+        font-size: 50px;
     }
     .pad{
         left: 33%;
         margin-top: 10px;
     }
-    .topseller-1, .topseller-2, .topseller-3{
+    .product{
         left: 0px;
-        padding: 30px 40px;
         height: 370px;
+        margin: 0px 0px;
     }
-    .newarrival-1, .newarrival-2, .newarrival-3{
-        left: 0px;
-        padding: 30px 40px;
-        height: 370px;
-    }
-    
-    .topseller-1 img, .topseller-2 img,  .topseller-3 img{
+    .product img{
         width: 200px;
         height: 200px;
     }
-    .newarrival-1 img, .newarrival-2 img, .newarrival-3 img{
-        width: 200px;
-        height: 200px;
-    }
-
 }
 @media (max-width:800px) {
     .headlinee{
@@ -89,63 +70,33 @@
         margin-top: 10px;
     }
 
-    .topseller-1, .topseller-2, .topseller-3{
+    .product{
         left: 0px;
         padding: 20px 20px;
-    }
-    .newarrival-1, .newarrival-2, .newarrival-3{
-        left: 0px;
-        padding: 20px 20px;
-        height: 400px;
+        margin-bottom: 20px;
     }
 
 }
 @media (max-width:425px) {
     .content {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .headlinee{
-        left: 23%;
-        font-size: 38px;
+        left: 25%;
+        font-size: 40px;
     }
     .pad{
-        left: 13%;
-        margin-top: 125px;
+        left: 18%;
     }
 
-    .topseller-1{
+    .product{
         padding: 0px 40px;
         text-align: center;
         font-size: larger;
     }
-    .topseller-2{
-        padding: 50px 40px;
-        text-align: center;
-        font-size: larger;
-    }
-    .topseller-3{
-        padding: 100px 40px;
-        text-align: center;
-        font-size: larger;
-    }
-    .newarrival-1{
-        padding:110px 40px;
-        text-align: center;
-        font-size: larger;
-    }
-    .newarrival-2{
-        padding: 150px 40px;
-        text-align: center;
-        font-size: larger;
-    }
-    .newarrival-3{
-        padding: 200px 40px;
-        text-align: center;
-        font-size: larger;
-    }
     
-    .topseller-1 img, .topseller-2 img, .topseller-3 img, .newarrival-1 img, .newarrival-2 img, .newarrival-3 img{
+    .product img{
         width: 250px;
         height: 250px;
     }
