@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    position: relative;
+    max-width: 1555px;
+    width: 100%;
+    background: #9A7B4F;
+    margin: 100px 0px 15px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .4);
+    flex-direction: row;
+    color: white;
+}
+.container h1{
+    text-align: center;
+    font-size: 40px;
+}
+.container .content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.container .content .cart{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container .content .cart img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.container .content .cart .qty{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container .content .cart .qty p,
+.container .content .cart .qty button{
+    margin: 0 5px 0 5px;
+}
+.container .content .cart .qty button,
+.container .content .cart .qty input{
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.receipt{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.total{
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.submit{
+    width: 10%;
+}
+.container .receipt input{
+    width: 400px;
+    align-self: center;
+}

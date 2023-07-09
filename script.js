@@ -46,3 +46,29 @@ function openForm(){
 function closeForm(){
   document.getElementById("oppen").style.display = "none";
 }
+
+
+
+// cart add and minus
+const cartItems = document.getElementsByClassName('qty');
+
+Array.from(cartItems).forEach(cartItems=> {
+  const decreaseBtn = cartItems.querySelector('.minusQty');
+  const increaseBtn = cartItems.querySelector('.addQty');
+  const quantityInput = cartItems.querySelector('.cartQty');
+
+
+decreaseBtn.addEventListener('click', () => {
+  let quantity = parseInt(quantityInput.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInput.value = quantity;
+  }
+});
+ // Increase quantity
+ increaseBtn.addEventListener('click', () => {
+  let quantity = parseInt(quantityInput.value);
+  quantity++;
+  quantityInput.value = quantity;
+});
+});
