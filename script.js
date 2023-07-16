@@ -50,25 +50,76 @@ function closeForm(){
 
 
 // cart add and minus
-const cartItems = document.getElementsByClassName('qty');
+ var add = document.getElementById('add');
+ var show = document.getElementById('show');
+ var minus = document.getElementById('minus',);
+ var add2 = document.getElementById('add2');
+ var show2 = document.getElementById('show2');
+ var minus2 = document.getElementById('minus2',);
+ var subtotal = 2;
+ var price = 299;
+ var tprice = 598;
 
-Array.from(cartItems).forEach(cartItems=> {
-  const decreaseBtn = cartItems.querySelector('.minusQty');
-  const increaseBtn = cartItems.querySelector('.addQty');
-  const quantityInput = cartItems.querySelector('.cartQty');
+ // increase quantity
+add.addEventListener('click', calculate);
+function calculate(){
+  var show = document.getElementById('show').innerHTML;
+  show++;
+  subtotal++;
+  tprice= tprice + price;
+  document.getElementById('show').innerHTML = show++;
+  document.getElementById('itemQ').innerHTML = subtotal;
+  document.getElementById('tprice').innerHTML = tprice;
+}
+ // decrease quantity
+ minus.addEventListener('click', calculate2);
+ function calculate2(){
+  if(document.getElementById('show').innerHTML > 1){
+   var show = document.getElementById('show').innerHTML;
+   show--;
+   subtotal--;
+   tprice = tprice - price;
+   document.getElementById('show').innerHTML = show--;
+   document.getElementById('itemQ').innerHTML = subtotal;
+   document.getElementById('tprice').innerHTML = tprice;
+ }}
+  // increase quantity
+add2.addEventListener('click', calculate3,subtotal);
+function calculate3(){
+  var show2 = document.getElementById('show2').innerHTML;
+  show2++;
+  subtotal++;
+  tprice= tprice + price;
+  document.getElementById('show2').innerHTML = show2++;
+  document.getElementById('itemQ').innerHTML = subtotal;
+  document.getElementById('tprice').innerHTML = tprice;
+}
+ // decrease quantity
+ minus2.addEventListener('click', calculate4,subtotal);
+ function calculate4(){
+  if(document.getElementById('show2').innerHTML > 1){
+   var show2 = document.getElementById('show2').innerHTML;
+   show2--;
+   subtotal--;
+   tprice = tprice - price;
+   document.getElementById('show2').innerHTML = show2--;
+   document.getElementById('itemQ').innerHTML = subtotal;
+   document.getElementById('tprice').innerHTML = tprice;
+ }}
 
+ // delete item
+ function removeItem(){
+  document.getElementById('item1').innerHTML ="";
+  subtotal--;
+  tprice = tprice - price;
+  document.getElementById('itemQ').innerHTML = subtotal;
+  document.getElementById('tprice').innerHTML = tprice;
 
-decreaseBtn.addEventListener('click', () => {
-  let quantity = parseInt(quantityInput.value);
-  if (quantity > 1) {
-    quantity--;
-    quantityInput.value = quantity;
-  }
-});
- // Increase quantity
- increaseBtn.addEventListener('click', () => {
-  let quantity = parseInt(quantityInput.value);
-  quantity++;
-  quantityInput.value = quantity;
-});
-});
+ }
+ function removeItem2(){
+  document.getElementById('item2').innerHTML ="";
+  subtotal--;
+  tprice = tprice - price;
+  document.getElementById('itemQ').innerHTML = subtotal;
+  document.getElementById('tprice').innerHTML = tprice;
+ }

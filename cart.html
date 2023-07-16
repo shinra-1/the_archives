@@ -85,37 +85,45 @@
 <section class="container">
   <div class="content">
     <h1>SHOPPING CART</h1>
-    <div class="cart">
+    <div class="cart" id="item1">
       <img src="products/COTTON CHECKERED CAMI DRESS.jpeg" alt="damit">
         <div class="price">
           <h3>COTTON CHECKERED CAMI DRESS</h3>
           <h4>P299</h3>
+          <p onclick="removeItem()">DELETE</p>
         </div>
         <div class="qty">
-          <button class="addQTy">+</button>
-          <input type="number" class="quantity-input" value="0">
-          <button class="decQTy">-</button>
+          <span id="minus">-</span>
+          <span id="show">1</span>
+          <span id="add">+</span>
         </div>
     </div>
-    <div class="cart">
+    <div class="cart" id="item2">
       <img src="products/COTTON BROWN SLEEVELESS VEST.jpeg" alt="damit">
         <div class="price">
         <h3>COTTON BROWN SLEEVELESS VEST</h3>
         <h4>P299</h3>
+        <p onclick="removeItem2()">DELETE</p>
       </div>
       <div class="qty">
-        <button class="addQTy">+</button>
-        <input type="number" class="quantity-input" value="0">
-        <button class="decQTy">-</button>
+        <span id="minus2">-</span>
+        <span id="show2">1</span>
+        <span id="add2">+</span>
       </div>
     </div>
   </div>
   <div class="receipt">
     <h1>TOTAL</h1>
     <div class="total">
-      <p>Items Quantity: 6</p>
+      <div class="iq">
+        <p>Item Quantity:</p>
+        <span id="itemQ">2</span>
+      </div>
       <p>Delivery Fee: P100</p>
-      <p>TOTAL: 1794</p>
+      <div class="Tprice">
+        <p>Total:</p>
+        <span id="tprice">598</span>
+      </div>
     </div>
     <input type="submit" value="CHECKOUT">
   </div>
